@@ -1,7 +1,7 @@
 # MarketsChain
 Proof of concept on applying blockchain technology for front-to-back derivatives trading
 
-Section 1. A credible alternative to the full suite of systems that finanacial institutions have implemented will need need to fullfill this high level list of requirements
+Section 1. A credible alternative to the full suite of systems that financial institutions have implemented will need need to fullfill this high level list of requirements
 - Scalability
 - Privacy: Transaction details (including counterparties) can not be freely accessible
 - Immediacy of trade capture
