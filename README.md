@@ -17,20 +17,22 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
 - Allow pre-execution / price discovery
 - Industry-wide blockchain initiative will require blockchain access controls
 
-## Blockhain features & Technology to be used for the POC
+## Blockhain features required
 - Blockchain 2.0 with smart contracts to manage blockchain access, market/static data, trade execution, trade capture/amendment, BO processing 
-  => Ethereum / EVM capabilities
 - Private chain in order to support the a consortium of financial institutions
-  => Hydrachain
 - To achieve scalability, following features will be required
-  - Blocks/transaction to be run in parallel
-  - Not all nodes will have access
-  => on long term some research by ???? and ??? will enable this. For the POC we will create multiple chain with Hydrachain and implement the ability for nodes to connect to those multiple chains ???
+  - Blocks/transaction to be run in parallel: like ???
+  - Not all nodes will have access: like ???
 - Privacy through anonymisation ???
-  => ???
 - POW will not be necessary and a set of block validators will be managed through a contract
 
-## Implementation of the proof of concept
+## Technology used for this SPOC
+Blockchain = Ethereum on a private network (planned to later upgrade to Hydrachain and implement multi chain linking within a node in Python)
+Contract = Ethereum EVM / Solidity
+Interface = Meteor / javascript
+All this will not allow full scalability nor privacy, so will have to wait development on ??? and ???
+
+## Implementation roadmap for of the proof of concept
 ### v0.1 15.03.2016: Implementation of a suite of Ethereum contracts and a meteor GUI for managing vanilla Interests Rates Swaps.
 Meteor interface can be accessed on ????.meteor.com
 You will need to launch a test ethereum client locally with the following command.
@@ -40,6 +42,51 @@ geth console ???
 > ??? all contracts creation  and solidity files???
 ```
 
-### v0.2 coming soom: Upgrade to effective multi chain in testing + remove the need of running an ethereum node
+### v0.2 coming soon: Upgrade to multi chain + remove the need of running an ethereum node
 
+
+### ... then upgrade to more trade types, market data, more data to comply with regulation, etc...
+
+
+# Implementation description
+
+## Solidity contracts
+
+#### Coin contract
+- Name = Inter-Bank Coin
+- Description = Currency for transaction within the consortium blockchain. Validators will start with a set amount of this currency and will flatten their balance at the end of day.
+- Instance & Chain = One instance on "coin chain"
+
+#### Block validator contract
+- Name = Validator 
+- Description = Mechanism to identify validators and update list of authorised validator
+- Instance & Chain = One instance on "static data chain"
+
+#### Customer contract
+- Name = Customer
+- Description = Mechanism for validators to on-board client (KYC,AML) while anonymising it to the rest of network
+- Instance & Chain = One instance on "static data chain"
+
+#### Market data contract
+- Name = IB
+- Description = Mechanism to reach consesus among validators on market data price (intra-day or at end of day)
+- Instance & Chain = One instance per market data on "market data chain"
+
+#### Bilateral IRS contract (existing and still prevaling mechanism in markets such as forex)
+
+
+#### Billaterally Executed & Centrally Cleared IRS contract (expanded following Dodd-Frank and EMIR regulation)
+
+
+#### Exchange Traded & Centrally Cleared IRS contract
+
+
+#### Blockchain Cleared IRS contract
+
+
+
+## Bots to simulate market
+
+
+## Meteor interface
 
