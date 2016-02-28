@@ -27,13 +27,13 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
 - POW will not be necessary and a set of block validators will be managed through a contract
 
 ## Technology used for this SPOC
-Blockchain = Ethereum on a private network (planned to later upgrade to Hydrachain and implement multi chain linking within a node in Python)
-Contract = Ethereum EVM / Solidity
-Interface = Meteor / javascript
-All this will not allow full scalability nor privacy, so will have to wait development on ??? and ???
+- Blockchain = Ethereum on a private network (planned to later upgrade to Hydrachain and implement multi chain linking within a node in Python)
+- Contract = Ethereum EVM / Solidity
+- Interface = Meteor / javascript
+- All this will not allow full scalability nor privacy, so will have to wait development on ??? and ???
 
 ## Implementation roadmap for of the proof of concept
-### v0.1 15.03.2016: Implementation of a suite of Ethereum contracts and a meteor GUI for managing vanilla Interests Rates Swaps.
+#### v0.1 15.03.2016: Implementation of a suite of Ethereum contracts and a meteor GUI for managing vanilla Interests Rates Swaps.
 Meteor interface can be accessed on ????.meteor.com
 You will need to launch a test ethereum client locally with the following command.
 
@@ -42,13 +42,12 @@ geth console ???
 > ??? all contracts creation  and solidity files???
 ```
 
-### v0.2 coming soon: Upgrade to multi chain + remove the need of running an ethereum node
+#### v0.2 coming soon: Upgrade to multi chain + remove the need of running an ethereum node
+
+#### v0.x: focus on execution mechanism upgrade + more trade types, market data, more data to comply with regulation, etc...
 
 
-### ... then upgrade to more trade types, market data, more data to comply with regulation, etc...
-
-
-# Implementation description
+# Detailed description
 
 ## Solidity contracts
 
@@ -73,20 +72,48 @@ geth console ???
 - Instance & Chain = One instance per market data on "market data chain"
 
 #### Bilateral IRS contract (existing and still prevaling mechanism in markets such as forex)
-
+- Name = OTC-IRS
+- Description = 
+- Instance  & Chain = 
 
 #### Billaterally Executed & Centrally Cleared IRS contract (expanded following Dodd-Frank and EMIR regulation)
-
+- Name = cOTC-IRS
+- Description = 
+- Instance  & Chain = 
 
 #### Exchange Traded & Centrally Cleared IRS contract
+- Name = ETD-IRS
+- Description = 
+- Instance  & Chain = 
 
+#### Blockchain IRS contract
+- Name = BC-IRS
+- Description = 
+- Instance  & Chain = 
 
-#### Blockchain Cleared IRS contract
-
-
-
-## Bots to simulate market
+#### Bots to simulate market contract
+- Name =
+- Description = 
+- Instance  & Chain = 
 
 
 ## Meteor interface
+
+#### Features
+- Create an account and get an automatc coin reward
+- Participate to market data / price discovery
+- Execute through the chain
+- Capture trades through the chain
+- Monitor live position
+- Monitor automatic settlement
+- Generate reporting
+- Act as a validator and monitor client on-boarding and block validation???
+- Act as a customer and book trades???
+
+#### User guide
+Detailed user guide is available on ???
+
+## Key assumptions & limitations
+- This project is purely a proof of concept to validate the practicality of moving markets into the blockchain.  All coins distributed(entirely for free) and exchanged are run on a private / testing ethereum instance. Everything could be deleted without notice.
+- 
 
