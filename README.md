@@ -31,15 +31,15 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
 - POW will not be necessary and a set of block validators will be managed through a contract
 
 ## Implementation of the proof of concept
-### Step 1 (Mar-2016): Development of necessary contracts to manage vanilla IRS on an ethereum test network.
-Meteor interface is avaiable on ????.meteor.com
-You will need to install ethereum instance with the following command.
+### v0.1 15.03.2016: Implementation of a suite of Ethereum contracts and a meteor GUI for managing vanilla Interests Rates Swaps.
+Meteor interface can be accessed on ????.meteor.com
+You will need to launch a test ethereum client locally with the following command.
 
 ```
 geth console ???
+> ??? all contracts creation  and solidity files???
 ```
 
-###Step 2: Upgrade
-
+### v0.2 coming soom: Upgrade to effective multi chain in testing + remove the need of running an ethereum node
 
 
