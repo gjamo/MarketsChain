@@ -1,7 +1,7 @@
 # MarketsChain
 Proof of concept on applying blockchain technology for front-to-back derivatives trading
 
-Section 1. A credible alternative to the full suite of systems that financial institutions have implemented will need need to fullfill this high level list of requirements
+## A credible alternative to the full suite of systems that financial institutions have implemented will need to fullfill (at least) this high level list of requirements
 - Scalability
 - Privacy: Transaction details (including counterparties) can not be freely accessible
 - Immediacy of trade capture
@@ -17,7 +17,7 @@ Section 1. A credible alternative to the full suite of systems that financial in
 - Allow pre-execution / price discovery
 - Industry-wide blockchain initiative will require blockchain access controls
 
-Section 2. Blockhain features & Technology to be used for the POC
+## Blockhain features & Technology to be used for the POC
 - Blockchain 2.0 with smart contracts to manage blockchain access, market/static data, trade execution, trade capture/amendment, BO processing 
   => Ethereum / EVM capabilities
 - Private chain in order to support the a consortium of financial institutions
@@ -29,3 +29,17 @@ Section 2. Blockhain features & Technology to be used for the POC
 - Privacy through anonymisation ???
   => ???
 - POW will not be necessary and a set of block validators will be managed through a contract
+
+## Implementation of the proof of concept
+### Step 1 (Mar-2016): Development of necessary contracts to manage vanilla IRS on an ethereum test network.
+Meteor interface is avaiable on ????.meteor.com
+You will need to install ethereum instance with the following command.
+
+```
+geth console ???
+```
+
+###Step 2: Upgrade
+
+
+
