@@ -29,4 +29,3 @@ Section 2. Blockhain features & Technology to be used for the POC
 - Privacy through anonymisation ???
   => ???
 - POW will not be necessary and a set of block validators will be managed through a contract
-- 
