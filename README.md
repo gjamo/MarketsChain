@@ -21,6 +21,8 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
   - trade executed externally (exchange, SEF or phone) before being recorded on the ledger
   - manage relationship
 
+- Note: We will consider execution / pre-exec / discovery / RFQ out of scope for now. For execution, although blockchain could be applicable to RFQ order, distributed technology such as IPFS will be more appropriate to central limit order book. Indeed CLOB requires high latency and data is not persistent and does not need to be stored in a ledger as such
+
 ## Blockhain features required
 - Blockchain 2.0 with smart contracts to manage blockchain access, market/static data, trade execution, trade capture/amendment, BO processing 
 - Private chain in order to support the a consortium of financial institutions
@@ -29,7 +31,6 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
   - Not all nodes will have access: like ???
 - Privacy through anonymisation ???
 - POW will not be necessary and a set of block validators will be managed through a contract
-- For execution, although blockchain could be applicable to RFQ order, distributed technology such as IPFS will be more appropriate to central limit order book. Indeed CLOB requires high latency and data is not persistent and does not need to be stored in a ledger as such
 
 ## Technology used for this SPOC
 - Blockchain = Ethereum on a private network (planned to later upgrade to Hydrachain and implement multi chain linking within a node in Python)
@@ -119,7 +120,7 @@ geth console ???
 Detailed user guide is available on ???
 
 #### Key assumptions & limitations
+
 - This project is purely a proof of concept to validate the practicality of moving markets into the blockchain.  All coins distributed(entirely for free) and exchanged are run on a private / testing ethereum instance. Everything could be deleted without notice
-- 
 
 END
