@@ -22,6 +22,7 @@ Proof of concept on applying blockchain technology for front-to-back derivatives
   - manage relationship
 
 - Note: We will consider execution / pre-exec / discovery / RFQ out of scope for now. For execution, although blockchain could be applicable to RFQ order, distributed technology such as IPFS will be more appropriate to central limit order book. Indeed CLOB requires high latency and data is not persistent and does not need to be stored in a ledger as such
+- Simplifying assumption: I would assume the only collateral and currency in the world is the blockchain currency. OBviously in reality some bridges between the two will need to be built, and should be described in further paper.
 
 ## Blockhain features required
 - Blockchain 2.0 with smart contracts to manage blockchain access, market/static data, trade execution, trade capture/amendment, BO processing 
